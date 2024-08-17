@@ -4,6 +4,8 @@ ggwave-wheels
 
 Original project: https://github.com/ggerganov/ggwave/
 
+This fork: https://github.com/matteotenca/ggwave-wheels
+
 This is just a set of updated files needed to install ``ggwave`` version ``0.4.2`` under Python versions ``> 3.10``.
 The original ``ggwave`` on PyPI fails to install in some circumstancies, due to the
 pre-cythonized ``.cpp`` distributed inside the package.

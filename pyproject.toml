@@ -19,7 +19,7 @@ keywords = [
     "ultrasound",
 ]
 readme = "README.rst"
-urls = {Homepage = "https://github.com/ggerganov/ggwave", Homepage = "https://github.com/matteotenca/ggwave-wheels"}
+urls = {Homepage = "https://github.com/ggerganov/ggwave"}
 
 [tool.setuptools]
 include-package-data = false
