@@ -14,9 +14,9 @@ if not OMIT_README_RST:
         long_description = f.read()
 
 extension = [Extension("ggwave",
-                       ["ggwave.pyx", "ggwave/src/ggwave.cpp"],
-                       include_dirs=["ggwave/include", "ggwave/include/ggwave"],
-                       depends=["ggwave/include/ggwave/ggwave.h"],
+                       ["src/ggwave/ggwave.pyx", "src/ggwave/ggwave/src/ggwave.cpp"],
+                       include_dirs=["src/ggwave/ggwave/include", "src/ggwave/ggwave/include/ggwave"],
+                       depends=["src/ggwave/ggwave/include/ggwave/ggwave.h"],
                        language="c++",
                        )]
 
@@ -24,10 +24,9 @@ extension = cythonize(extension)
 
 setup(
     # Information
-    name="ggwave",
+    name="ggwave-wheels",
     description="Tiny data-over-sound library.",
     long_description=long_description,
-    version="0.4.2",
     url="https://github.com/ggerganov/ggwave",
     author="Georgi Gerganov",
     author_email="ggerganov@gmail.com",

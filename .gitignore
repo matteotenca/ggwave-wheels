@@ -1,0 +1,9 @@
+/old/
+/venv/
+/.idea
+/ggwave-pypi.iml
+/build/
+/dist/
+/**/**egg**
+/src/ggwave/ggwave.cpp
+/wheelhouse/

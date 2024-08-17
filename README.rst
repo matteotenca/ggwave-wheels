@@ -4,16 +4,17 @@ ggwave-wheels
 
 Original project: https://github.com/ggerganov/ggwave/
 
-This is just a set of updated files needed to install `ggwave` version `0.4.2` under Python versions `> 3.10`.
-The original `ggwave` on PyPI fails to install in some circumstancies, due to the
-pre-cythonized `.cpp` distributed inside the package.
+This is just a set of updated files needed to install ``ggwave`` version ``0.4.2`` under Python versions ``> 3.10``.
+The original ``ggwave`` on PyPI fails to install in some circumstancies, due to the
+pre-cythonized ``.cpp`` distributed inside the package.
 
-This version is *identical* to the orginal, but adds a `pyproject.toml` file and an updated `setup.py`.
-This way, `wheel`, `setuptools` and `cython` are temporary installed as build requirements, and used to create a 
-new cythonized `.cpp`. After that, the `.cpp` file is compiled and the `egg` installed, and the build environment
+This version is **identical** to the orginal, but adds a ``pyproject.toml`` file and a updated ``setup.py``.
+This way, ``wheel``, ``setuptools`` and ``cython`` are temporary installed as build requirements, and used to create
+a new cythonized ``.cpp``. After that, the ``.cpp`` file is compiled and the ``egg`` installed, and the build environment
 then is cleaned.
 
-This works under `Windows` too, and some pre-built `wheel`s for `AMD64` architecture are included.
+This works under ``Windows`` too, VS is needed, but and some pre-built ``wheel`` for ``AMD64`` architecture are included.
+
 
 Original README:
 
