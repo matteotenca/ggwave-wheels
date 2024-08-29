@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ggwave-wheels"
-version = "0.4.2.2"
+version = "0.4.2.3"
 authors = [{name = "Georgi Gerganov", email = "ggerganov@gmail.com"}]
 license = {text = "MIT"}
 description = "Tiny data-over-sound library."
@@ -28,10 +28,10 @@ include-package-data = false
 where = ["src"]
 
 [tool.cibuildwheel.windows]
-skip = "cp36-*"
+skip = "cp36-* cp37-* pp36* pp37*"
 archs = "auto64"
 
 [tool.cibuildwheel.linux]
-skip = "cp36-* *musl* pp*"
+skip = "cp36-* cp37-* pp* *musl*"
 archs = "auto64"
 container-engine = "podman"
