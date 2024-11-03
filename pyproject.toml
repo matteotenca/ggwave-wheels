@@ -1,11 +1,11 @@
 [build-system]
 requires = ["setuptools>=60", "cython>=3.0.0;python_version>='3.11.0'",
-        "cython>=0.29.28;python_version<'3.11.0'", "wheel"]
+    "cython>=0.29.28;python_version<'3.11.0'", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "ggwave-wheels"
-version = "0.4.2.3"
+version = "0.4.2.4"
 authors = [{name = "Georgi Gerganov", email = "ggerganov@gmail.com"}]
 license = {text = "MIT"}
 description = "Tiny data-over-sound library."
@@ -20,6 +20,7 @@ keywords = [
 ]
 readme = "README.rst"
 urls = {Homepage = "https://github.com/ggerganov/ggwave"}
+requires-python = ">=3.8"
 
 [tool.setuptools]
 include-package-data = false
@@ -35,3 +36,5 @@ archs = "auto64"
 skip = "cp36-* cp37-* pp* *musl*"
 archs = "auto64"
 container-engine = "podman"
+
+[tool.cibuildwheel.macos]

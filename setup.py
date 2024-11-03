@@ -2,6 +2,7 @@ from setuptools import setup, Extension
 from codecs import open
 from Cython.Build import cythonize
 import os
+import sys
 
 long_description = ""
 
@@ -18,6 +19,7 @@ extension = [Extension("ggwave",
                        include_dirs=["src/ggwave/ggwave/include", "src/ggwave/ggwave/include/ggwave"],
                        depends=["src/ggwave/ggwave/include/ggwave/ggwave.h"],
                        language="c++",
+                       extra_compile_args=["-std=c++11"] if sys.platform.find("win32") < 0 else[],
                        )]
 
 extension = cythonize(extension)
