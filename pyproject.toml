@@ -30,11 +30,12 @@ where = ["src"]
 
 [tool.cibuildwheel.windows]
 skip = "cp36-* cp37-* pp36* pp37*"
-archs = "auto64"
+archs = "auto"
 
 [tool.cibuildwheel.linux]
-skip = "cp36-* cp37-* pp* *musl*"
-archs = "auto64"
+skip = "cp36-* cp37-* *musl*"
+archs = "auto"
 container-engine = "podman"
 
 [tool.cibuildwheel.macos]
+build-verbosity = 2
