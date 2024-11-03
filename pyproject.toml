@@ -38,4 +38,4 @@ archs = "auto"
 container-engine = "podman"
 
 [tool.cibuildwheel.macos]
-skip = "cp38-macosx_*"
+skip = "cp38-macosx_* pp38-macosx_*"
